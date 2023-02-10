@@ -1,0 +1,154 @@
+/* css reseting rules */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+html, body {
+  height: 100%;
+}
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+/* Make images easier to work with */
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /* Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+
+body{
+    /* background-color: goldenrod; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input[type=text], input[type=date]{
+    border: none;
+    outline: none;
+    padding: .3rem 1rem;
+    border: 2px solid goldenrod;
+}
+
+button{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: .2rem 1.5rem;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: hsl(43, 74%, 45%);
+    color: white;
+}
+button:hover{
+    cursor: pointer;
+    background-color: goldenrod;
+    color: white;
+}
+#fa{
+cursor: pointer;
+margin: 2px;
+font-size: 20px;
+}
+#fa:hover{
+    color: darkblue;
+}
+/* styling the output table */
+#expenseTable {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  
+  #expenseTable td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #expenseTable tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #expenseTable tr:hover {background-color: #ddd; cursor: pointer;}
+  
+  #expenseTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: deepskyblue;
+    color: white;
+  }
+  article h1:first-child{
+    
+    margin-top: 1rem;
+  }
+  .balanceWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+
+.balanceContainer{
+  margin-top: 5rem;
+  margin-left: 1rem;
+  padding: 1rem;
+}
+.balanceContainer p{
+  text-align: center;
+}
+.balanceContainer span{
+  text-align: center;
+  padding-left: 1.5rem;
+}
+.fa-solid{
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+  font-size: 30px;
+  color: goldenrod;
+}
+#clearAll{
+  background-color: hsl(0, 81%, 26%);
+}
+#clearAll:hover{
+  background-color: hsl(0, 81%, 40%);
+}
+.deletebtn:hover{
+  background-color: hsl(0, 81%, 40%);
+}
+
+/* styling the radio buttons */
+
+/* styling radio button ends here */

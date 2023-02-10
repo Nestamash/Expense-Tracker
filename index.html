@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Expense Tracker</title>
+</head>
+<body>
+    
+    <section>
+
+      <article class="balanceWrapper">
+        <div class="balanceContainer">
+          <h1>Income</h1>
+          <span><i class="fa-solid fa-wallet"></i></span>
+          <p id="income">Ks. 3,500</p>
+
+        </div>
+        <div class="balanceContainer">
+          <h1>Expenses</h1>
+          <span><i class="fa-solid fa-business-time"></i></span>
+          <p id="expense">Ksh. 3,500</p>
+        </div>
+        <div class="balanceContainer">
+          <h1>Balance</h1>
+          <span><i class="fa-solid fa-sack-dollar"></i></span>
+          <p id="balance">Ksh. 3,500</p>
+        </div>
+      </article>
+
+    <article>
+    <h1>Enter Transaction</h1>
+    <input type="text" name="text" id="expenses" placeholder="type your expense...">
+    <h1>Amount</h1>
+    <input type="text" name="text" id="amount" placeholder="Enter amount">
+    
+<!-- radio buttons to choose the type of transaction -->
+<div class="container">
+	
+	<h3>Select the type of transaction:</h3>
+	
+  <ul>
+  <li>
+    <input type="radio" id="type-income" name="selector" value="income">
+    <label for="type-income">Income</label>  
+  </li>
+  
+  <li>
+    <input type="radio" id="type-expense" name="selector" value="expense">
+    <label for="type-expense">Expense</label>
+  </li>
+  <!-- <button onclick=" getTransactionType()">see value</button> -->
+</ul>
+</div>
+
+<!-- radio buttons ends here -->
+
+
+    <h1>Date</h1>
+    <input type="date" name="text" id="date"><br>
+    <button id="add">Add</button>
+    <button id="clearAll" onclick="clearAll1()">ClearAll</button>
+    </article>
+    <!-- table -->
+    <article>
+    <table id="expenseTable">
+        <tr>
+          <th>Date</th>
+          <th>Transaction</th>
+          <th>Amount</th>
+          <th>Remove expe</th>
+        </tr>
+      </table>
+    </article>
+    </section>
+<script src="index.js" ></script>
+</body>
+</html>
